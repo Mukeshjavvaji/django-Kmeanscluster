@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Django API</title>
+    </head>
+    <body>
+        <form method="POST" action="predict">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" value="submit">Submit</button>
+        </form>
+    </body>
+</html>
